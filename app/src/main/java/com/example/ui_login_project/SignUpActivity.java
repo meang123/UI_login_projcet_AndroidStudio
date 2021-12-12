@@ -74,7 +74,7 @@ public class SignUpActivity extends AppCompatActivity
 
 
 
-        Call<MY_USER_Data> call = MyRetrofitClient.getRetrofit().create(My_api.class).createNewAcount(name,pass,email);
+        Call<MY_USER_Data> call = MyRetrofitClient.getRetrofit().create(My_api.class).createNewAcount(name,email,pass);
 
 
         call.enqueue(new Callback<MY_USER_Data>() {
